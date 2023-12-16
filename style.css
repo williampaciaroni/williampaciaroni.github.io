@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  background-color: rgb(23, 23, 23);
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 2;
+}
+
+.container {
+  display: table;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+
+  #contacts-container {
+    z-index: 3;
+    position: absolute;
+    right: 1.5vw;
+    top: 0;
+
+    h1 {
+      color: white;
+
+      a {
+        color: inherit; /* blue colors for links too */
+        text-decoration: inherit; /* no underline */
+      }
+    }
+  }
+
+  #text-container {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    left: 1.5vw;
+
+    h1 {
+      font-size: 120px;
+      color: white;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 40px;
+      color: white;
+      margin-top: 0;
+    }
+  }
+
+  #dev-name {
+    position: absolute;
+    right: 1.5vw;
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+  }
+}
